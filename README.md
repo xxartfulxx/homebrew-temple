@@ -4,11 +4,11 @@ Homebrew tap for [Temple](https://github.com/xxartfulxx/Temple).
 
 ## Install
 
-Until Temple ships a tagged release with a stable tarball and checksum, install the head build:
+Install Temple from the tap with:
 
 ```bash
 brew tap xxartfulxx/temple
-brew install temple --HEAD
+brew install temple
 ```
 
 Then run:
@@ -19,6 +19,6 @@ temple
 
 ## Notes
 
-- this tap currently installs the latest `main` branch from `xxartfulxx/Temple`
-- once Temple has a real release tag, switch `Formula/temple.rb` to a stable `url` and `sha256`
-- after that, users will be able to run `brew install temple` without `--HEAD`
+- this tap currently installs the stable `v0.1.0` Temple release
+- use `brew install --HEAD temple` only if you want the latest unreleased Temple code
+- future stable releases just need the formula version updated to the next tagged Temple release
